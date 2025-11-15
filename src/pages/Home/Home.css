@@ -1,0 +1,101 @@
+/* メインコンテンツ */
+.home-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4rem 4rem;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+.home-main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: #333;
+}
+
+.home-main__title {
+  margin-bottom: 0.1rem;
+  font-size: 2rem;
+}
+
+.home-main__text {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.home-main__sign-up-btn {
+  align-self: center;
+  padding: 0.8rem 1.6rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-main__sign-up-btn:hover {
+  background-color: #357ab8;
+}
+
+.home-main__sign-up-btn:focus-visible {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* —————————————————————————
+   タブレット（768px以上）
+   ————————————————————————— */
+
+@media (min-width: 768px) {
+  .home-main {
+    padding: 3rem 2rem;
+  }
+
+  .home-main__title {
+    font-size: 2rem;
+  }
+
+  .home-main__text {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .home-main__sign-up-btn {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* —————————————————————————
+   スマートフォン（〜767px）
+   ————————————————————————— */
+
+@media (max-width: 767px) {
+  .home-main {
+    padding: 2rem 1rem;
+  }
+
+  .home-main__title {
+    font-size: 1.6rem;
+  }
+
+  .home-main__text {
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .home-main__sign-up-btn {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.95rem;
+  }
+}
