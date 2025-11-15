@@ -1,0 +1,12 @@
+/* フッター */
+
+.site-footer {
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #333333;
+}
+
+.site-footer__copy {
+  color: #f2f2f2;
+  font-size: 0.8rem;
+}
