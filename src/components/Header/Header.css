@@ -1,0 +1,106 @@
+/* ヘッダー */
+
+.site-header {
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: #333333;
+}
+
+.site-header__container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.site-header__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0.4rem;
+  align-items: center;
+}
+
+/* サイトタイトル */
+
+.site-header__title {
+  color: #f2f2f2;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.site-header__title:hover {
+  color: #cccccc;
+}
+
+.site-header__title:focus-visible {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ナビゲーションメニュー */
+
+.site-header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.site-header__nav-link {
+  padding: 0.25rem 0;
+  color: #f2f2f2;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.site-header__nav-link:hover {
+  color: #cccccc;
+}
+
+.site-header__nav-link:focus-visible {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* —————————————————————————
+   タブレット（768px以上）
+   ————————————————————————— */
+
+@media (min-width: 768px) {
+  .site-header__inner {
+    padding: 0 2rem;
+    gap: 1.5rem;
+  }
+
+  .site-header__title {
+    font-size: 1.6rem;
+  }
+
+  .site-header__nav {
+    gap: 1.5rem;
+  }
+}
+
+/* —————————————————————————
+   スマートフォン（〜767px）
+   ————————————————————————— */
+
+@media (max-width: 767px) {
+
+  .site-header__inner {
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .site-header__title {
+    font-size: 1.4rem;
+  }
+
+  .site-header__nav {
+    gap: 0.8rem;
+  }
+}
