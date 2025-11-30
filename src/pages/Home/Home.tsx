@@ -14,7 +14,7 @@ const Home: React.FC = () => {
           <div className="home-main__container">
             <h2 className="home-main__title">BookNoteを始めましょう</h2>
             <p className="home-main__text">読んだ本を記録して、ふりかえりをサポートします</p>
-            <Link to="/" className="home-main__sign-up-btn">新規登録</Link>
+            <Link to="/Signup" className="home-main__sign-up-btn">新規登録</Link>
           </div>
         </div>
       </main>
