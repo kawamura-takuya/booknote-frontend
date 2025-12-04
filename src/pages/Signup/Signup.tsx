@@ -27,7 +27,6 @@ const Signup: React.FC = () => {
     success,
   } = useSignupRequest();
 
-  // フォーム送信時に、新規登録API呼び出し、成功時にフォームをリセット
   const onSubmit = async (values: SignupFormValues) => {
     await signUp(values, reset);
   };
